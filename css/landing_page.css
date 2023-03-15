@@ -1,8 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    /* font-family:'Courier New', Courier, monospace;
-    box-sizing: border-box; */
 }
 body{
     background-color: rgb(5, 4, 19);
@@ -72,7 +70,8 @@ nav ul li a:hover::after{
     background-image: url('../files/bodyimg.jpg');
     background-position: center;
     height: 70vh;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 13px  #93294d ;
 }
 .mainPart .mainText{
     display: inline-block;
