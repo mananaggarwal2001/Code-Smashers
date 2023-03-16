@@ -100,7 +100,7 @@ nav ul li a:hover::after {
     width: 12vw;
     display: flex;
     flex-direction: column;
-    margin-top: 1.2vh;
+    margin-top: 1vh;
 }
 .mainPart .leftSide,form{
     /* border: 3px solid rgb(14, 22, 179); */
@@ -139,12 +139,15 @@ input{
     background: transparent;
     color: white;
     resize: none;
+    padding: 10px;
 }
 textarea{
     background: transparent;
     width: inherit;
     resize: none;
     border-radius: 10.2px;
+    color: white;
+    padding: 10px;
 }
 
 .rit{
@@ -163,7 +166,7 @@ button{
 form button{
     
     padding: 9px;
-    margin-top: 8vh;
+    margin-top: 5px;
     height: 6vh;
     width: 65px;
     margin-left: 10px;
@@ -270,12 +273,46 @@ button {
     justify-content: space-around;
     padding: 8vh;
     flex-wrap: wrap;
+    /* position: relative; */
 }
+.content{
+    background-color: rgba(0, 0, 0, 0.54);
+   height: inherit;
+    position: absolute;
+    width: inherit;
+    top: 170px;
+    left:0 ;
+    right: 0;
+    bottom: 0;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    
+    
+}
+.featureBox:hover .content{
+    top: 0;
+}
+
 .featureBox{
-    height: 25vh;
+    height: 170px;
     box-shadow: 2px 3px 13px 8px #93294d;
     width: 45vh;
-    /* text-align: center; */
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+#featureBox1{
+    background-image: url('../files/security.jpg');
+    background-position: center;
+}
+#featureBox2{
+    background-image: url('../files/privacy.jpg');
+    background-position: center;
+}
+#featureBox3{
+    background-image: url('../files/password.jpg');
+    background-position: center;
 }
 
 
@@ -285,7 +322,7 @@ button {
     flex-direction: column;
 }
 .featureBox .heading{
-    font-size: 4vh;
+    font-size: 4.4vh;
     color: white;
     margin-top: 1.4vh;
 }
@@ -304,3 +341,17 @@ button {
     margin-top: 1vh;
 }
 
+
+
+/* FOOTER */
+footer{
+    background-color: rgb(12, 40, 64);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer{
+    /* text-align: center; */
+    color: white;
+}

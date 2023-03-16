@@ -130,3 +130,17 @@ button:hover{
     color: rgb(12,40,64);
     transition: 0.7s;
 }
+
+/* FOOTER */
+footer{
+    margin-top: 10px;
+    background-color: rgb(12, 40, 64);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer{
+    /* text-align: center; */
+    color: white;
+}
